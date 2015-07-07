@@ -96,4 +96,6 @@ thumbnail: true
 fancybox: true
 scrollLoading: true
 
+google_analytics: UA-64878473-1
+
 custom_css: css/custom.css

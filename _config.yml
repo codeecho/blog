@@ -1,0 +1,99 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Adam Knight
+subtitle: Software Developer
+description: This is the description
+author: Adam Knight
+language: en
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://codeecho.co.uk
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Header
+menu:
+  Home: /
+  Projects: 
+    Joe Bloggs: /Joe-Bloggs
+  About Me: http://codeecho.co.uk/adamknight
+  Contact Me: /Contact-Me
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: hueman
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/codeecho/codeecho.github.io.git
+
+# Hueman Theme
+logo: /css/images/logo.png
+
+social_links:
+  github: https://github.com/codeecho
+  #twitter: https://twitter.com/codeechodev
+  #google_plus: https://plus.google.com/u/2/116870795787793768489/posts
+
+widgets:
+- recent_posts
+- category
+- tag
+- archive
+
+thumbnail: true
+fancybox: true
+scrollLoading: true
+
+custom_css: css/custom.css
